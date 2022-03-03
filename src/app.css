@@ -1,0 +1,10 @@
+.webhook__main__wr {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 50px;
+  border: 2px dashed;
+  border-radius: 6px;
+  border-color: #ddd;
+}
