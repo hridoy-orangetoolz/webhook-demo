@@ -1,0 +1,70 @@
+/* Type */
+.webhook__main__wr .webhook__request__type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.webhook__main__wr .webhook__request__type span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.webhook__main__wr .webhook__request__type .webhook__request__type__dropdown {
+  width: 30%;
+  display: inline-flex;
+  float: right;
+}
+
+.webhook__main__wr
+  .webhook__request__type
+  .webhook__request__type__dropdown
+  .MuiInputBase-root {
+  width: 100%;
+}
+
+#webhook__request__type__label {
+  font-size: 16px;
+  color: rgb(55, 53, 47);
+  font-weight: bold;
+}
+
+#webhook__request__type__dropdown__type {
+  font-size: 16px;
+  color: rgb(55, 53, 47);
+  font-weight: bold;
+}
+
+.webhook__main__wr
+  .webhook__request__type
+  .webhook__request__type__dropdown
+  .MuiSelect-select {
+  border-color: #ddd;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.webhook__main__wr
+  .webhook__request__type
+  .webhook__request__type__dropdown
+  .MuiSelect-select:focus {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  border-color: #ddd;
+  width: 100%;
+}
+
+/* Endpoint */
+.webhook__main__wr .webhook__request__endpoint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Format */
+.webhook__main__wr .webhook__request__format {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

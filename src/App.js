@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.css";
-import WebhookRequestTemplate from "./components/WebhookRequestTemplate";
+import WebhookRequestTemplate from "./components/template/WebhookRequestTemplate";
 
 const App = () => {
   return (
