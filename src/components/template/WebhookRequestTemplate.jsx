@@ -1,49 +1,38 @@
 import React from "react";
 import "./requestTemplate.css";
-import { MenuItem, Select } from "@material-ui/core";
-import { BootstrapInput } from "../custom/BootstrapInput";
-import { DROPDOWN_BOTTOM_SETUP } from "../../constants/CoreConstants";
 import { WEBHOOK_REQUESTS } from "../../constants/TemplateConstants";
+import CustomSelect from "../custom/CustomSelect";
 
 const WebhookRequestTemplate = () => {
   return (
     <>
-      <div className="webhook__request__type">
+      <div className="webhook__request__each__section">
         <span>Request Type</span>
-        <div className="webhook__request__type__dropdown">
-          <Select
-            id="webhook__request__type__label"
-            // value={
-            //   props.builderJson?.logoSize !== undefined
-            //     ? props.builderJson.logoSize
-            //     : logoSizes[2]
-            // }
-            MenuProps={DROPDOWN_BOTTOM_SETUP}
-            input={<BootstrapInput />}
-            // onChange={handleChangeLogoSize}
-          >
-            {WEBHOOK_REQUESTS.types.map((eachType, index) => {
-              return (
-                <MenuItem key={eachType} value={eachType} disableRipple>
-                  <span id="webhook__request__type__dropdown__type">
-                    {eachType}
-                  </span>
-                </MenuItem>
-              );
-            })}
-          </Select>
+        <div className="webhook__request__each__section__dropdown">
+          <CustomSelect
+            type={WEBHOOK_REQUESTS.types}
+            dropdownLabelId={"webhook__request__each__section__dropdown__label"}
+            dropdownTypeId={"webhook__request__each__section__dropdown__type"}
+          />
         </div>
       </div>
-      <div className="webhook__request__endpoint">
+      <div className="webhook__request__each__section">
         <span>Request Endpoint</span>
       </div>
-      <div className="webhook__request__format">
+      <div className="webhook__request__each__section">
         <span>Request Format</span>
+        <div className="webhook__request__each__section__dropdown">
+          <CustomSelect
+            type={WEBHOOK_REQUESTS.formats}
+            dropdownLabelId={"webhook__request__each__section__dropdown__label"}
+            dropdownTypeId={"webhook__request__each__section__dropdown__type"}
+          />
+        </div>
       </div>
-      <div className="webhook__request__auth__layer">
+      <div className="webhook__request__each__section">
         <span>Authentication Layer</span>
       </div>
-      <div className="webhook__request__data__layer">
+      <div className="webhook__request__each__section">
         <span>Data Layer</span>
       </div>
     </>
