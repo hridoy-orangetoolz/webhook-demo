@@ -16,9 +16,7 @@ const WebhookRequestTemplate = () => {
           />
         </div>
       </div>
-      <div className="webhook__request__each__section">
-        <span>Request Endpoint</span>
-      </div>
+
       <div className="webhook__request__each__section">
         <span>Request Format</span>
         <div className="webhook__request__each__section__dropdown">
@@ -29,9 +27,16 @@ const WebhookRequestTemplate = () => {
           />
         </div>
       </div>
+
+      <div className="webhook__request__each__section">
+        <span>Request Endpoint</span>
+        <input type="text" className="webhook__request__endpoint" />
+      </div>
+
       <div className="webhook__request__each__section">
         <span>Authentication Layer</span>
       </div>
+
       <div className="webhook__request__each__section">
         <span>Data Layer</span>
       </div>

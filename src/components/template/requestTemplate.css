@@ -59,10 +59,11 @@
 }
 
 /* Endpoint */
-.webhook__main__wr .webhook__request__endpoint {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.webhook__main__wr
+  .webhook__request__each__section
+  .webhook__request__endpoint {
+  width: 60%;
+  height: 34px;
 }
 
 /* Format */
